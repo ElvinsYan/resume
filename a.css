@@ -52,7 +52,6 @@ a{
 }
 
 .TopNavBar > nav > ul > li > a{
-  text-decoration: none;
   font-size: 13px;
   font-weight: bold;
   color: #C2C5C8;
