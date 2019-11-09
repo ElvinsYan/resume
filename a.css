@@ -1,26 +1,27 @@
 body{
   background-color: black;
-  margin: 0px;
+  margin: 0;
 }
 
-a{
-  color: inherit;
-  text-decoration: none;
-}
 .clearfix::after{
-  content: '';
+  content:'';
   display: block;
   clear: both;
 }
 
-.TopNavBar{
-  margin: 28px 120px 28px 120px;
+a{
+  text-decoration: none;
 }
+
+.TopNavBar{
+  margin: 26px 170px 26px 170px;
+}
+
 .TopNavBar .logo{
   font-family: Arial Black;
   font-size: 24px;
+  padding-bottom: 5px;
 }
-
 .TopNavBar .logo .RS{
   color: #E8676B;
   margin-right: 4px;
@@ -30,38 +31,30 @@ a{
   color: #9A9DA2;
 }
 
-.TopNavBar > a{
-  float: left;
-}
-
-.TopNavBar > nav{
-  float: right;
-}
-
 .TopNavBar > nav > ul{
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .TopNavBar > nav > ul > li{
   float: left;
+  list-style: none;
   margin-left: 17px;
   margin-right: 17px;
-  list-style: none;
+  font-size: 12px;
+  font-weight: bold; 
 }
 
-.TopNavBar > nav > ul > li > a{
-  font-size: 13px;
-  font-weight: bold;
+.TopNavBar>nav>ul>li>a{
   color: #C2C5C8;
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
+  padding-top: 8px;
   display: block;
 }
 
-.TopNavBar > nav > ul > li > a:hover{
+.TopNavBar>nav>ul>li>a:hover{
   border-bottom: 3px solid #E8676B;
 }
