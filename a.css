@@ -1,8 +1,20 @@
 body{
     margin: 0;
+    background: #EFEFEF;
 }
 a{
     text-decoration: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    height: 0;
+    border: none;
+    border-top: 1px solid #DEDEDE;
 }
 
 .clearfix::after{
@@ -12,7 +24,15 @@ a{
 }
 
 .topNavBar{
-    padding: 18px 16px 18px 16px;
+    padding: 24px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.topNavBar .topNavBar-inner{
+    padding: 0px 16px;
 }
 
 .topNavBar .logo{
@@ -35,23 +55,23 @@ a{
     float: left;
 }
 
-.topNavBar>nav{
+.topNavBar nav{
     float: right;
     padding-top: 8px;
 }
-.topNavBar>nav>ul{
+.topNavBar nav>ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.topNavBar>nav>ul>li{
+.topNavBar nav>ul>li{
     float: left;
     padding-left: 17px;
     padding-right: 17px;
 }
 
-.topNavBar>nav>ul>li>a{
+.topNavBar nav>ul>li>a{
     font-size: 12px;
     color: #B7B7B7;
     font-weight: bold;
@@ -62,6 +82,87 @@ a{
     border-bottom: 3px solid transparent;
 }
 
-.topNavBar>nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover{
     border-bottom: 3px solid #E06567;
+}
+
+.banner{
+    background-image: url(./img/rs-cover.jpg); 
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.userCard{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.userCard .pictureAndText{
+    padding: 50px 50px;
+}
+
+.userCard .picture{
+    float: left;
+}
+
+.userCard .text{
+    float: left;
+    padding-left: 65px;
+    width: 470px;
+}
+
+.userCard .text h1{
+    margin-top: 18px;
+}
+
+.userCard .welcome{
+    background: #E6686A;
+    color: white;
+    display: inline-block;
+    padding: 5px 16px;
+    line-height: 22px;
+    position: relative;
+}
+
+.userCard .welcome .triangle{
+    display: block;
+    border: 10px solid transparent;
+    width: 0px;
+    border-left-color: #E6686A;
+    border-top-width: 0px;
+    position: absolute;
+    top: 100%;
+    left: 4px;
+}
+
+.userCard .text hr{
+    margin: 20px 0;
+}
+
+.userCard dl dt,
+.userCard dl dd{
+    float: left;
+    padding: 15px 0;
+}
+
+.userCard dl dt{
+    width: 30%;
+    font-weight: bold;
+}
+
+.userCard dl dd{
+    width: 70%;
+    color: #9DA0A7;
+}
+
+.userCard > .footer .media{
+    background: E6686A;
 }
