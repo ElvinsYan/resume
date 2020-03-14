@@ -5,6 +5,7 @@ body{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 *{
@@ -104,6 +105,7 @@ hr{
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.4);
 }
 
 .userCard .pictureAndText{
@@ -186,4 +188,40 @@ hr{
     height: 30px;
     fill: white;
     vertical-align: top;
+}
+
+body > main{
+    margin-top: -345px;
+}
+
+body > main .downloadResume-wrapper{
+    text-align: center;
+}
+
+body > main .downloadResume{
+    font-size: 14px;
+    line-height: 16px;
+    padding: 21px 55px;
+    display: inline-block;
+    font-weight: bold;
+    color: #3d4451;
+    border: 1px solid #CBCDCF;
+    background: #EFEFEF;
+    border-radius: 3px;
+    margin: 34px 0;
+    transition: box-shadow 0.3s;
+}
+
+body > main .downloadResume:hover{
+    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.3);
+}
+
+.selfIntroduction{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-family: '楷体';
+    font-size: 20px;
 }
