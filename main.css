@@ -1,45 +1,39 @@
-body{
+body {
     margin: 0;
     background: #EFEFEF;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-hr{
+hr {
     height: 0;
     border: none;
     border-top: 1px solid #DEDEDE;
 }
 
-ul,
-ol{
+ul, ol {
     list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6{
+h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-.clearfix::after{
+.clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.topNavBar{
+.topNavBar {
     padding: 24px 0px;
     position: fixed;
     top: 0;
@@ -47,47 +41,48 @@ h6{
     width: 100%;
 }
 
-.topNavBar .topNavBar-inner{
+.topNavBar .topNavBar-inner {
     padding: 0px 16px;
 }
 
-.topNavBar .logo{
-    font-family: Arial Black; 
+.topNavBar .logo {
+    font-family: Arial Black;
     font-size: 24px;
     padding-top: 3px;
     padding-bottom: 4px;
 }
 
-.topNavBar .logo .RS{
+.topNavBar .logo .RS {
     color: #E6686A;
     margin-right: 4px;
 }
 
-.topNavBar .logo .card{
+.topNavBar .logo .card {
     color: #9A9DA2;
 }
 
-.topNavBar>a{
+.topNavBar>a {
     float: left;
 }
 
-.topNavBar nav{
+.topNavBar nav {
     float: right;
     padding-top: 8px;
 }
-.topNavBar nav>ul{
+
+.topNavBar nav>ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.topNavBar nav>ul>li{
+.topNavBar nav>ul>li {
     float: left;
     padding-left: 17px;
     padding-right: 17px;
 }
 
-.topNavBar nav>ul>li>a{
+.topNavBar nav>ul>li>a {
     font-size: 12px;
     color: #B7B7B7;
     font-weight: bold;
@@ -98,49 +93,49 @@ h6{
     border-bottom: 3px solid transparent;
 }
 
-.topNavBar nav>ul>li>a:hover{
+.topNavBar nav>ul>li>a:hover {
     border-bottom: 3px solid #E06567;
 }
 
-.banner{
-    background-image: url(./img/rs-cover.jpg); 
+.banner {
+    background-image: url(./img/rs-cover.jpg);
     height: 515px;
     background-position: center center;
     background-size: cover;
 }
 
-.mask{
+.mask {
     height: 515px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.userCard{
+.userCard {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     background-color: #FFFFFF;
-    box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.4);
 }
 
-.userCard .pictureAndText{
+.userCard .pictureAndText {
     padding: 50px 50px;
 }
 
-.userCard .picture{
+.userCard .picture {
     float: left;
 }
 
-.userCard .text{
+.userCard .text {
     float: left;
     padding-left: 65px;
     width: 470px;
 }
 
-.userCard .text h1{
+.userCard .text h1 {
     margin-top: 18px;
 }
 
-.userCard .welcome{
+.userCard .welcome {
     background: #E6686A;
     color: white;
     display: inline-block;
@@ -149,7 +144,7 @@ h6{
     position: relative;
 }
 
-.userCard .welcome .triangle{
+.userCard .welcome .triangle {
     display: block;
     border: 10px solid transparent;
     width: 0px;
@@ -160,59 +155,57 @@ h6{
     left: 4px;
 }
 
-.userCard .text hr{
+.userCard .text hr {
     margin: 20px 0;
 }
 
-.userCard dl dt,
-.userCard dl dd{
+.userCard dl dt, .userCard dl dd {
     float: left;
     padding: 15px 0;
 }
 
-.userCard dl dt{
+.userCard dl dt {
     width: 30%;
     font-weight: bold;
 }
 
-.userCard dl dd{
+.userCard dl dd {
     width: 70%;
     color: #9DA0A7;
 }
 
-.userCard > footer.media{
+.userCard>footer.media {
     background: #E6686A;
     text-align: center;
-    
 }
 
-.userCard > footer.media > a{
+.userCard>footer.media>a {
     display: inline-block;
     padding: 8px;
     border-radius: 50%;
     margin: 16px;
 }
 
-.userCard > footer.media > a:hover{
+.userCard>footer.media>a:hover {
     background: #D05C60;
 }
 
-.userCard svg{
+.userCard svg {
     width: 30px;
     height: 30px;
     fill: white;
     vertical-align: top;
 }
 
-body > main{
+body>main {
     margin-top: -345px;
 }
 
-body > main .downloadResume-wrapper{
+body>main .downloadResume-wrapper {
     text-align: center;
 }
 
-body > main .downloadResume{
+body>main .downloadResume {
     font-size: 14px;
     line-height: 16px;
     padding: 21px 55px;
@@ -226,11 +219,11 @@ body > main .downloadResume{
     transition: box-shadow 0.3s;
 }
 
-body > main .downloadResume:hover{
-    box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.3);
+body>main .downloadResume:hover {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
-.selfIntroduction{
+.selfIntroduction {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
@@ -240,16 +233,14 @@ body > main .downloadResume:hover{
     font-size: 20px;
 }
 
-section.skills,
-section.portfolio{
+section.skills, section.portfolio {
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
 }
 
-section.skills > h2,
-section.portfolio > h2{
+section.skills>h2, section.portfolio>h2 {
     text-align: center;
     color: #3d4451;
     font-size: 34px;
@@ -257,102 +248,101 @@ section.portfolio > h2{
     font-weight: 600;
 }
 
-section.skills > ol{
+section.skills>ol {
     background: #FFFFFF;
-    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
     padding: 40px 50px 10px;
     margin-top: 30px;
 }
 
-section.skills h3{
+section.skills h3 {
     font-size: 14px;
     line-height: 1.1;
     padding-right: 40px;
 }
 
-section.skills > ol > li{
+section.skills>ol>li {
     float: left;
     width: 48%;
 }
 
-section.skills > ol > li:nth-child(even){
+section.skills>ol>li:nth-child(even) {
     float: right;
 }
 
-section.skills .progressBar{
+section.skills .progressBar {
     height: 5px;
     background: #FAE1E1;
     border-radius: 2px;
     margin: 4px 0 40px;
 }
 
-section.skills .progressBar > .progress{
+section.skills .progressBar>.progress {
     height: 100%;
     background: #E8676B;
     width: 50%;
     border-radius: 2px;
 }
 
-section.portfolio{
+section.portfolio {
     text-align: center;
 }
 
-section.portfolio > nav{
+section.portfolio>nav {
     display: inline-block;
     vertical-align: top;
 }
 
-section.portfolio > nav > ol{
+section.portfolio>nav>ol {
     display: inline-block;
     vertical-align: top;
 }
 
-section.portfolio > nav > ol >li{
+section.portfolio>nav>ol>li {
     float: left;
     margin-left: 50px;
     cursor: pointer;
 }
 
-section.portfolio > nav > ol >li:nth-child(1){
+section.portfolio>nav>ol>li:nth-child(1) {
     margin-left: 0;
 }
 
-section.portfolio > nav .bar{
+section.portfolio>nav .bar {
     height: 5px;
     background: #FFFFFF;
     margin-top: 14px;
     border-radius: 2px;
 }
 
-section.portfolio > nav .bar-inner{
+section.portfolio>nav .bar-inner {
     height: 100%;
     background: #E8676B;
     border-radius: 2px;
     transition: all 0.3s;
 }
 
-section.portfolio > nav .bar.state-1 .bar-inner{
+section.portfolio>nav .bar.state-1 .bar-inner {
     margin-left: 0;
     width: 35px;
 }
 
-section.portfolio > nav .bar.state-2 .bar-inner{
+section.portfolio>nav .bar.state-2 .bar-inner {
     margin-left: 84px;
     width: 35px;
 }
 
-section.portfolio > nav .bar.state-3 .bar-inner{
+section.portfolio>nav .bar.state-3 .bar-inner {
     margin-left: 165px;
     width: 95px;
 }
 
-section.portfolio .jobs{
+section.portfolio .jobs {
     position: relative;
     margin-top: 30px;
     margin-bottom: 100px;
 }
 
-section.portfolio .jobs > .big,
-section.portfolio .jobs > .small{
+section.portfolio .jobs>.big, section.portfolio .jobs>.small {
     position: absolute;
 }
