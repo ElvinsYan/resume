@@ -34,15 +34,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .topNavBar {
-    padding: 24px 0px;
+    padding: 25px 0px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    color: #B7B7B7;
+    transition: all 0.5s;
+}
+
+.topNavBar.sticky{
+    background: #FFFFFF;
+    color: #3D4451;
+    padding: 13px 0;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    z-index: 1;
 }
 
 .topNavBar .topNavBar-inner {
-    padding: 0px 16px;
+    padding: 0px 194px;
 }
 
 .topNavBar .logo {
@@ -67,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .topNavBar nav {
     float: right;
-    padding-top: 8px;
+    padding-top: 2px;
 }
 
 .topNavBar nav>ul {
@@ -84,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .topNavBar nav>ul>li>a {
     font-size: 12px;
-    color: #B7B7B7;
+    color: inherit;
     font-weight: bold;
     padding-top: 5px;
     padding-bottom: 5px;
