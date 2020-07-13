@@ -101,10 +101,28 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+    position: relative;
 }
 
-.topNavBar nav>ul>li>a:hover {
-    border-bottom: 3px solid #E06567;
+.topNavBar nav>ul>li>a:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #E06567;
+    animation: menuSlide 0.3s;
+}
+
+@keyframes menuSlide{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
 }
 
 .banner {
@@ -151,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     padding: 5px 16px;
     line-height: 22px;
+    font-weight: bold;
     position: relative;
 }
 
