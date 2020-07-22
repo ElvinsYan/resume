@@ -235,9 +235,24 @@
                 topNavBar.classList.remove('sticky')
             }
         }
+
+        let aTags = document.getElementByClassName('menuTrigger')
+        for (let i = 0; i < aTags.length; i++) {
+            aTags[i].onmouseenter = function (x) {
+                let a = x.currentTarget
+                let brother = a.nextSibling
+                while (brother.nodeType === 3) {
+                    brother = brother.nextSibling
+                }
+            }
+
+            aTags[i].onmouseleave = function () {
+
+            }
+        }
     </script>
 
 </body>
-   
+
 
 </html>
