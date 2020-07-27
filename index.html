@@ -241,13 +241,12 @@
             aTags[i].onmouseenter = function (x) {
                 let a = x.currentTarget
                 let brother = a.nextSibling
-                while (brother.nodeType === 3) {
+                while (brother.tagName !== 'UL') {
                     brother = brother.nextSibling
                 }
             }
 
             aTags[i].onmouseleave = function () {
-
             }
         }
     </script>
