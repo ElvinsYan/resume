@@ -43,7 +43,7 @@
             <a href="#" class="logo">
                 <span class="RS">RS</span><span class="card">card</span>
             </a>
-            <nav>
+            <nav class="menu">
                 <ul class="clearfix">
                     <li>
                         <a href="#">关于</a>
@@ -52,7 +52,7 @@
                         <a href="#">技能</a>
                     </li>
                     <li>
-                        <a class="menuTrigger" href="#">作品</a>
+                        <a href="#">作品</a>
                         <ul class="submenu">
                             <li>作品1</li>
                             <li>作品2</li>
@@ -60,7 +60,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="menuTrigger" href="#">博客</a>
+                        <a href="#">博客</a>
                         <ul class="submenu">
                             <li>博客1</li>
                             <li>博客2</li>
@@ -236,23 +236,17 @@
             }
         }
 
-        let aTags = document.getElementByClassName('menuTrigger')
-        for (let i = 0; i < aTags.length; i++) {
-            aTags[i].onmouseenter = function (x) {
-                let a = x.currentTarget
-                let brother = a.nextSibling
-                while (brother.tagName !== 'UL') {
-                    brother = brother.nextSibling
-                }
+        let liTags = document.querySelectorAll('nav.menu > ul > li')
+        for (let i = 0; i < liTags.length; i++) {
+            liTags[i].onmouseenter = function (x) {
+                x.currentTarget.classList.add('active')
             }
 
-            aTags[i].onmouseleave = function () {
+            liTags[i].onmouseleave = function (x) {
+                x.currentTarget.classList.remove('active')
             }
         }
     </script>
-
-
-
 
 </body>
 
